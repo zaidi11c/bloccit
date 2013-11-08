@@ -1,17 +1,13 @@
 class PostsController < ApplicationController
-  def index
-    @posts = Post.all
-  end
-
+  
   def show
     @post = Post.find(params[:id])
+    @topic = Topic.find(params[:topic_id])
   end
 
   def new
     @post = Post.new
     authorize! :create, Post, message: "You need to be a member to create a new post."
-    if @post.save
-    end  
   end 
 
   def create
