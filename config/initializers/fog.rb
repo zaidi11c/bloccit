@@ -2,10 +2,10 @@
 CarrierWave.configure do |config| 
   config.fog_credentials = { 
     :provider               => 'AWS', 
-    :aws_access_key_id      => ENV['AKIAISZYLEJXCP2SYJFA'], 
-    :aws_secret_access_key  => ENV['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'] 
+    :aws_access_key_id      => 'AKIAISZYLEJXCP2SYJFA', 
+    :aws_secret_access_key  => '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'
   } 
-  config.fog_directory  = ENV['zaidi11c-development']
+  config.fog_directory  = 'zaidi11c-development'
   config.fog_public     = false 
 end 
 
